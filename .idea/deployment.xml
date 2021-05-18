@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="prokajka" preserveTimestamps="false" traceLevel="ERRORS" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="prokajka">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/wp-content/themes/foundation_webpack" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

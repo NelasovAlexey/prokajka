@@ -1,0 +1,10 @@
+{
+  "devUrl": "https://nelasovdev.wpengine.com",
+  "themeName": "foundation_webpack",
+  "proxyUrl": "https://localhost:3000",
+  "open": false,
+  "bsWatchFiles": [
+    "**/*.php",
+    "assets/**/*.js"
+  ]
+}

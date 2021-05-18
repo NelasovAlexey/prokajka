@@ -1,0 +1,17 @@
+<?php
+
+// see
+// https://github.com/FriendsOfPHP/PHP-CS-Fixer/blob/master/.php_cs.dist
+// for more info
+
+$config = PhpCsFixer\Config::create()->setFinder(
+    PhpCsFixer\Finder::create()
+        ->notPath('vendor')
+        ->name('*.php')
+        ->ignoreDotFiles(true)
+        ->ignoreVCS(true)
+        ->in(__DIR__)
+);
+
+
+return $config;

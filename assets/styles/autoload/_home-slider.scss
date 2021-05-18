@@ -1,0 +1,100 @@
+/* -----------------------------------------
+   Home page slider
+----------------------------------------- */
+
+.home-slider:not(.slick-initialized) {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  .home-slide:first-child {
+    display: block;
+  }
+}
+
+.home-slider {
+
+  .slick-arrow {
+    /* Slick arrows global styles */
+  }
+
+  .slick-prev {
+    //&::before {
+    //}
+  }
+
+  .slick-next {
+    //&::before {
+    //}
+  }
+
+  .slick-dots {
+    /* Slick dots global styles */
+    font-size: 0;
+
+    li {
+      &:only-child {
+        display: none;
+      }
+
+      button {
+        &::before {
+          border: 2px solid $primary-color;
+          background-color: transparent;
+        }
+      }
+
+      &.slick-active {
+        button {
+          &::before {
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  .videoHolder {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+
+    .video {
+      pointer-events: none;
+
+      @include position-center;
+    }
+  }
+}
+
+.home-slide {
+  width: 100%;
+  height: 500px; /* define the height of slide */
+  transition: height 0.3s ease;
+
+  @include breakpoint(medium down) {
+    height: 400px;
+  }
+
+  @include breakpoint(small down) {
+    height: 300px;
+  }
+
+  &__inner {
+    @extend %bgcover;
+
+    position: relative;
+    height: 100%;
+  }
+
+  &__caption {
+    color: #ffffff;
+    text-align: center;
+    @include position-center;
+  }
+}
